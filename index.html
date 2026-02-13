@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9e3e3;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .landing-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .photo-container {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #d32f2f;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .landing-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .click-me-button {
+            font-size: 2em;
+            padding: 15px 40px;
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(211, 47, 47, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .click-me-button:hover {
+            background-color: #b71c1c;
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(211, 47, 47, 0.6);
+        }
+
+        .click-me-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <div class="photo-container">
+            <img src="your-photo.jpg" alt="Photo" class="landing-photo">
+        </div>
+        <button class="click-me-button" onclick="window.location.href='photo.html'">Click Me</button>
+    </div>
+</body>
+</html>
